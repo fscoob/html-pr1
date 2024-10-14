@@ -1,0 +1,1928 @@
+
+
+@font-face {
+    font-family:'myFont'; /* اسم الخط الذي تختاره */
+    src: url(./static/Rubik-Black.ttf);}
+@font-face {
+    font-family:'myFont1';
+    src: url(./static/Rubik-BlackItalic.ttf);}
+@font-face {
+    font-family:'myFont2';
+    src: url(./static/Rubik-Bold.ttf);}
+@font-face {
+    font-family:'myFont3';
+    src: url(./static/Rubik-BoldItalic.ttf);}
+@font-face {
+    font-family:'myFont4';
+    src: url(./static/Rubik-ExtraBold.ttf);}
+@font-face {
+    font-family:'myFont5';   
+    src: url(./static/Rubik-Italic.ttf);}
+@font-face {
+    font-family:'myFont6';    
+    src: url(./static/Rubik-Light.ttf);}
+
+@font-face {
+    font-family:'myFont7';    
+    src: url(./static/mohammad-bold-art-1.ttf);}
+
+    @font-face {
+        font-family:'myFont8';    
+        src: url(./static/Rubik-Medium.ttf);}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    animation: transform 1.5s ease-out;
+}
+
+header{
+    /* التحكم في ارتفاع الصفحة */
+    height: 100vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(146, 212, 201, 0.308);  */
+    /* الموضع */
+    z-index:0;
+}
+
+header #navbar #logo_0{
+    position: absolute;
+    width: 130px;
+    top: 30px;
+    left: 50px;
+
+}
+
+/*التحكم بقسم وماتحتويه*/
+header #navbar nav{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    padding: 10px;
+    z-index:1;
+}
+
+/*التحكم بقسم وماتحتويه*/
+header #navbar nav ul{
+    /*ازالة النقط بجانب مسميات اعلى الصفحة*/
+    list-style: none; 
+    /*جعل مسميات اعلى الصفحة بجانب بعض*/
+    display: flex;
+    /*التباعد من اليسار*/
+    /* margin-left: 570px; */
+    
+}
+
+/*  */
+header #navbar ul li a{
+    position:relative;
+    /* top:0%; */
+    /* left: 0%; */
+    /*ازالة الخط تحت مسميات اعلى الصفحة*/
+    text-decoration: none;
+    /*التباعد بين مسميات اعلى الصفحة*/
+    padding: 10px;
+    /*تغيير لون المسميات*/
+    color: #b37e0b;
+    /*تغيير حجم الخط*/
+    font-size: 15px;
+    /*تغيير الخط حسب الخطوط المدرجة اعلاه*/
+    font-family: 'myFont1';
+    /*مؤثر*/
+    transition: 0.2s linear;
+}
+/*مؤثرات تظهر للمسميات اعلى الصفحة*/
+header #navbar ul li a:hover{
+    border: 1px solid #5a420e;
+    color: #f0eeda;
+    background: #7a5e00;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0px 2px 10px 0.1px #000000cc;
+    /* transform: scale(2.4); */
+    transform:translateY(0 20px 20px #000000);
+    backdrop-filter: blur(100%);
+}
+
+header .txt_1{
+    /* تحرير الموضع */
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+/*التحكم بالصورة بشكل فردي وهي بداخل القسم*/
+header .txt_1 img{
+    /*حجم الصورة*/
+    width: 500px;
+    /* تحرير الموضع */
+    position: relative;
+    /*الموضع من الاعلى للاسفل*/
+    top: -690px;
+    /*الموضع من اليسار لليمين*/
+    left: 750px;
+}
+
+/*التحكم بالخط بشكل فري وهي داخل القسم*/
+header .txt_1 hr{
+    position: relative;
+    width: 1205px;
+    top: -685px;
+    left: 0px;
+    border: none;
+    border-radius: 20px;
+    background-color: #363535;
+    height: 2px;
+    text-align:left; 
+    margin-left: 0;
+}
+
+header .txt_1 .primary_text{
+    /* تحرير الموضع الخط */
+    position: relative;
+    text-align:right;
+    /*الموضع من الاعلى للاسفل*/
+    top: -680px;
+    /*الموضع من اليسار لليمين*/
+    left: -720px;
+    font-family: "myFont3";
+    /*تغير لون الخط*/
+    color: #b8995d;
+    /* لون تمييز فقط */
+    /* background-color: #adb663a4; */
+}
+/*نهاية اسنتايل صفحة 0*//*------------------------------------------------*/
+
+
+/*  *//*------------------------------------------------*/
+#p2{
+    /* التحكم في ارتفاع الصفحة */
+    height: 100vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(146, 212, 201, 0.308);  */
+    /* الموضع */
+    z-index:0;
+}
+
+#p2 .G1 #bg_1{
+    position: absolute;
+    width: 716px;
+    left: 1183px;
+}
+
+#p2 .G1 #bg_0_logo{
+    position: absolute;
+    width: 130px;
+    top: 950px;
+    left: 50px;
+}
+
+#p2 .G2 .titl{
+    position: absolute;
+    top: 1400px;
+    left: 200px;
+}
+
+#p2 .G2 .titl p {
+    text-align: center;
+    font-family: "myFont";
+    padding: 15px;
+    font-size: 40px;
+}
+
+#p2 .G2 .titl .p_2_text{
+    color: #b8995d;
+}
+
+#p2 .G2 .titl #btnback{
+    position: absolute;
+    top: 200px;
+    left: 320px;
+    color: #241e12;
+    text-decoration: none;
+    padding: 5px 30px;
+    background: #b8995d;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: 300px;
+    border-radius: 30px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p3{
+    /* التحكم في ارتفاع الصفحة */
+    height: 100vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(85, 150, 235, 0.308); */
+    /* الموضع */
+    z-index:0;
+}
+
+#p3 .G1 #img_1 {
+    position: absolute;
+    width: 750px;
+    top: 1950px;
+    left: 200px;
+    border: 10px solid #ffffff;
+    border-radius: 40px;
+
+    z-index:1;
+}
+
+#p3 .G1 #img_2 {
+    position: absolute;
+    width: 550px;
+    top: 1823px;
+    left: 0px;
+}
+
+#p3 .G1 #hr1{
+    display: block;
+    position: relative;
+    width: 600px;
+    top: 128px;
+    left: 1150px;
+    border: none;
+    border-radius: 30px;
+    background-color: #b8995d;
+    height: 750px;
+    text-align:left; 
+    
+}
+
+#p3 .G2 {
+    position: absolute;
+    top: 2160px;
+    left: 1160px;
+}
+
+#p3 .G2 #img_3{
+    position: absolute;
+    width: 30px;
+    top:0px;
+    left: 500px;
+}
+
+#p3 .G2 .txt_0{
+    font-family: "myFont3";
+    font-size: 30px;
+    position: absolute;
+    width: 10ch;
+    top: -5px;
+    left: 380px;
+}
+
+#p3 .G2 .txt_1{
+    font-family: "myFont6";
+    font-size: 24px;
+    text-align:right;
+    line-height: 1.8;
+    position: absolute;
+    width: 30ch;
+    top: 40px;
+    left: 40px;
+}
+
+#p3 .G2 .txt_2{
+    font-family: "myFont7";
+    font-size: 17px;
+    text-align:right;
+    position: absolute;
+    width: 60ch;
+    top: 350px;
+    left: -10px;
+}
+
+#p3 .G2 #btnback{
+    position: absolute;
+    top: 450px;
+    left: 220px;
+    color: #241e12;
+    text-decoration: none;
+    padding: 5px 30px;
+    background: #866f41;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: 300px;
+    border-radius: 30px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p4{
+    /* التحكم في ارتفاع الصفحة */
+    height: 106vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(11, 41, 138, 0.815); */
+    /* الموضع */
+    /* z-index:0; */
+    
+}
+
+#p4 .G1{
+    width: 500px;
+    position: absolute;
+    top: 2735px;
+    left: 0px;
+    
+}
+
+#p4 .G1 #img_1{
+    position: absolute;
+    width: 1200px;
+    top: -100px;
+    left: -200px;
+    clip-path:inset(100px 0px 0px 0px) ;
+    
+}
+#p4 .G1 #img_2{
+    position: absolute;
+    width: 700px;
+    top: 755px;
+    left: -190px;
+    
+}
+#p4 .G1 #img_3{
+    position: absolute;
+    width: 633px;
+    top: 0px;
+    left: 1270px;
+    
+}
+#p4 .G1 #img_4{
+    position: absolute;
+    width: 800px;
+    top: 150px;
+    left: 280px;
+    /* border-radius: 42px; */
+    /* box-shadow: -5px 10px 10px 0px #05050494; */
+}
+
+#p4 .G1 hr{
+    display: block;
+    position: relative;
+    width: 1000px;
+    height:550px;
+    top: 155px;
+    left: 120px;
+    border: 2px solid #000000;
+    border-radius: 35px;
+    
+    background-color: #ffffff;
+    /* text-align:left;  */
+    
+}
+
+#p4 .G2{
+    position: absolute;
+    width: 50px;
+    top: 2820px;
+    left: 110px;
+}
+
+#p4 .G2 #ico_1{
+    position: absolute;
+    width: 170px;
+    top: 100px;
+    left: 50px;
+    transition: 0.05s linear;
+}
+#p4 .G2 #ico_h1{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 240px;
+    left: 75px;
+    width: 20ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_1:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_1:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_2{
+    position: absolute;
+    width: 170px;
+    top: 100px;
+    left: 300px;
+}
+#p4 .G2 #ico_h2{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 240px;
+    left: 340px;
+    width: 20ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_2:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_2:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_3{
+    position: absolute;
+    width: 170px;
+    top: 100px;
+    left: 550px;
+}
+#p4 .G2 #ico_h3{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 230px;
+    left: 550px;
+    text-align: center;
+    width: 15ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_3:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_3:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_4{
+    position: absolute;
+    width: 170px;
+    top: 100px;
+    left: 800px;
+}
+#p4 .G2 #ico_h4{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 240px;
+    left: 845px;
+    width: 20ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_4:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_4:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_5{
+    position: absolute;
+    width: 170px;
+    top: 370px;
+    left: 175px;    
+}
+#p4 .G2 #ico_h5{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 490px;
+    left: 175px;
+    text-align: center;
+    width: 15ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_5:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_5:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_6{
+    position: absolute;
+    width: 170px;
+    top: 370px;
+    left: 425px;    
+}
+#p4 .G2 #ico_h6{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    width: 20ch;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_6:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_6:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+#p4 .G2 #ico_7{
+    position: absolute;
+    width: 170px;
+    top: 370px;
+    left: 675px;    
+}
+#p4 .G2 #ico_h7{
+    font-family: "myFont7";
+    font-size: 20px;
+    position: absolute;
+    top: 485px;
+    left: 675px;
+    width: 15ch;
+    text-align: center;
+    transition: 0.3s linear;
+}
+#p4 .G2 .ico_7:hover{
+    position: absolute;
+    color: #b8995d;
+    top: -5px;
+    text-shadow: 0px 3px 3px  #00000093;
+}
+#p4 .G2 #ico_7:hover{
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0.1px #00000070;
+}
+
+
+#p4 .G3{
+    display: block;
+    /* background-color: cadetblue; */
+    position: absolute;
+    width: 540px;
+    top: 2820px;
+    left: 1275px;
+}
+#p4 .G3 #txt_1{
+    font-family: "myFont7";
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+    width: 10ch;
+    top: 130px;
+    left: 340px;
+}
+#p4 .G3 #btnback{
+    
+    position: absolute;
+    top: 550px;
+    left: 220px;
+    color: #241e12;
+    text-decoration: none;
+    padding: 5px 30px;
+    background: #866f41;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: 300px;
+    border-radius: 30px;
+}
+
+#p4 .G3 #txt_2{
+    font-family: "myFont5";
+    font-size: 35px;
+    text-align:right;
+    line-height: 1.8;
+    color: #ffffff;
+    position: absolute;
+    width: 20ch;
+    top: 190px;
+    left: 50px;
+}
+
+
+#p4 .G4{
+    position: absolute;
+    width: 50px;
+    top: 3550px;
+    left: 1300px;
+}
+#p4 .G4 img{
+    position: absolute;
+    width: 150px;
+    top: 0px;
+    left: 0px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+
+#p5{
+    /* التحكم في ارتفاع الصفحة */
+    height: 133vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(114, 78, 148, 0.404); */
+    /* z-index: 0; */
+}
+
+#p5 .G1{
+    position: absolute;
+    width: 300px;
+    top: 3700px;
+}
+
+#p5 .G1 #img_1{
+    position: absolute;
+    width: 1900px;
+    top: 0px;
+    left: none;
+    
+}
+
+#p5 .G1 #img_2{
+    position: absolute;
+    width: 1900px;
+    top: 120px;
+    left: auto;
+    opacity: 0.5;
+    clip-path:inset(0px 0px 791px 0px);
+    z-index: -2;
+}
+#p5 .G1 #img_3{
+    position: absolute;
+    width: 1900px;
+    top: 0px;
+    left: auto;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#p5 .G1 #img_4{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left: 50px;
+}
+#p5 .G1 #hr5{
+    display: block;
+    position: relative;
+    width: 1900px;
+    height: 514px;
+    top: 594px;
+    left: 0px;
+    border: none;
+    border-radius: 0px;
+    background-color: #fafafa;
+    text-align:left;
+}
+
+
+#p5 .G2{
+    position: absolute;
+    width: 300px;
+    top: 4110px;
+}
+
+#p5 .G2 #ico_1{
+    position: absolute;
+    width: 400px;
+    top: 0px;
+    left: 150px;
+}
+
+#p5 .G2 #ico_2{
+    position: absolute;
+    width: 400px;
+    top: 0px;
+    left: 550px;
+}
+
+#p5 .G2 #ico_3{
+    position: absolute;
+    width: 400px;
+    top: 0px;
+    left: 950px;
+}
+
+#p5 .G2 #ico_4{
+    position: absolute;
+    width: 400px;
+    top: 0px;
+    left: 1350px;
+}
+
+#p5 .G3{
+    position: absolute;
+    width: 300px;
+    top: 3700px;
+}
+
+#p5 .G3 #p_1{
+    font-family: "myFont5";
+    font-size: 120px;
+    /* text-align:right; */
+    line-height: 1.8;
+    color: #020101;
+    position: absolute;
+    width: 300px;
+    left: 1500px;
+    top: 0px;
+}
+
+#p5 .G3 #p_2{
+    font-family: "myFont5";
+    font-size: 77px;
+    text-align:center;
+    line-height: 1.8;
+    color: #b8995d;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 15ch;
+    left: 635px;
+    top: 272px;
+}
+
+#p5 .G3 #p_3{
+    font-family: "myFont5";
+    font-size: 35px;
+    text-align:center;
+    line-height: 1.8;
+    color: #111111;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 10ch;
+    left: 245px;
+    top: 740px;
+}
+#p5 .G3 #p_3_1{
+    font-family: "myFont8";
+    font-size: 20px;
+    text-align:center;
+    line-height: 1.8;
+    color: #b8995d;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 19ch;
+    left: 230px;
+    top: 890px;
+}
+
+#p5 .G3 #p_4{
+    font-family: "myFont5";
+    font-size: 35px;
+    text-align:center;
+    line-height: 1.8;
+    color: #111111;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 15ch;
+    left: 590px;
+    top: 740px;
+}
+#p5 .G3 #p_4_1{
+    font-family: "myFont8";
+    font-size: 20px;
+    text-align:center;
+    line-height: 1.8;
+    color: #b8995d;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 24ch;
+    left: 600px;
+    top: 890px;
+}
+
+#p5 .G3 #p_5{
+    font-family: "myFont5";
+    font-size: 35px;
+    text-align:center;
+    line-height: 1.8;
+    color: #111111;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 15ch;
+    left: 990px;
+    top: 740px;
+}
+#p5 .G3 #p_5_1{
+    font-family: "myFont8";
+    font-size: 20px;
+    text-align:center;
+    line-height: 1.8;
+    color: #b8995d;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 24ch;
+    left: 1000px;
+    top: 890px;
+}
+
+#p5 .G3 #p_6{
+    font-family: "myFont5";
+    font-size: 35px;
+    text-align:center;
+    line-height: 1.8;
+    color: #111111;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 12ch;
+    left: 1410px;
+    top: 740px;
+}
+
+#p5 .G3 #p_6_1{
+    font-family: "myFont8";
+    font-size: 20px;
+    text-align:center;
+    line-height: 1.8;
+    color: #b8995d;
+    /* background-color: aquamarine; */
+    position: absolute;
+    width: 28ch;
+    left: 1375px;
+    top: 890px;
+}
+
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+
+#p6{
+    /* التحكم في ارتفاع الصفحة */
+    height: 110vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(114, 78, 148, 0.404); */
+    /* z-index: 0; */
+}
+
+#p6 .G1{
+    position: absolute;
+    width: 1900px;
+    top: 4840px;
+    /* opacity: 0.5; */
+}
+#p6 .G1 h1{
+    font-family: "myFont5";
+    font-size: 90px;
+    position: absolute;
+    top: 60px;
+    left: 1500px;
+    /* background: #6e3939; */
+}
+
+#p6 .G2{
+    position: absolute;
+    top: 4840px;
+}
+
+#p6 .G2 img{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left: 60px;
+    /* background-color: cornflowerblue; */
+}
+
+#p6 .G3{
+    position: absolute;
+    top:  5100px;
+}
+
+#p6 .G3 #hr6{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    top: 0px;
+    left: 805px;
+    border: 2px solid #b8995d;
+    border-radius: 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+
+#p6 .G3 h1{
+    font-family: "myFont3";
+    font-size: 25px;
+    width: 13ch;
+    position: absolute;
+    top: 27px;
+    left: 820px;
+    /* background: #b8995d; */
+}
+
+#p6 .G4{
+    position: absolute;
+    top:  5265px;
+}
+
+#p6 .G4 img{
+    position: absolute;
+    width: 750px;
+    top: 0px;
+}
+
+#p6 .G4 #img1{
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}
+#p6 .G4 #img2{
+    position: absolute;
+    top: 0px;
+    left: 1000px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+
+#p7{
+    /* التحكم في ارتفاع الصفحة */
+    height: 100vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(57, 72, 202, 0.404); */
+    /* z-index: 0; */
+}
+#p7 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 5795px;
+}
+#p7 .G1 #img1{
+    position: absolute;
+}
+#p7 .G1 #img2{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left: 60px;
+}
+#p7 .G1 h1{
+    font-family: "myFont5";
+    font-size: 90px;
+    position: absolute;
+    top: 60px;
+    left: 1500px;
+    /* background: #6e3939; */
+}
+#p7 .G2{
+    position: absolute;
+    width: 1900px;
+    top: 6150px;
+}
+#p7 .G2 #hr7_1{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    top: 0px;
+    left: 240px;
+    border: 2px solid #b8995d;
+    border-radius: 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p7 .G2 #hr7_2{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    top: -80px;
+    left: 815px;
+    border: 2px solid #b8995d;
+    border-radius: 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p7 .G2 #hr7_3{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    top: -160px;
+    left: 1385px;
+    border: 2px solid #b8995d;
+    border-radius: 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p7 .G2 #img3{
+    position: absolute;
+    width: 220px;
+    top: 150px;
+    left: 250px;
+}
+#p7 .G2 #img4{
+    position: absolute;
+    width: 220px;
+    top: 150px;
+    left: 835px;
+}
+#p7 .G2 #img5{
+    position: absolute;
+    width: 220px;
+    top: 150px;
+    left: 1400px;
+}
+#p7 .G3{
+    position: absolute;
+    width: 1900px;
+    top: 6165px;
+    
+}
+#p7 .G3 #txt7_1{
+    font-family: "myFont7";
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 290px;
+}
+#p7 .G3 #txt7_2{
+    font-family: "myFont7";
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 870px;
+}
+#p7 .G3 #txt7_3{
+    font-family: "myFont7";
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 1430px;
+}
+#p7 .G4{
+    position: absolute;
+    width: 1900px;
+    top: 6100px;
+}
+#p7 .G4 #all{
+
+    position: absolute;
+    width: 200px;
+    height: 410px;
+    top: 219px;
+    left:260px ;
+    border: none;
+    border-radius: 25px;
+    background-size: 100% 100%;
+    /* box-shadow: 10px 10px 10px rgb(0,0,0,0.25); */
+    animation: bg 10s linear infinite;
+    z-index: -1;
+}
+@keyframes bg{
+    /* 10%{background-image: url(./img/Bg_p_0.png);} */
+    10%{background-image: url(./img/Bg_p_1.png);}
+    20%{background-image: url(./img/Bg_p_2.png);}
+    30%{background-image: url(./img/Bg_p_3.png);}
+    40%{background-image: url(./img/Bg_p_4.png);}
+    50%{background-image: url(./img/Bg_p_5.png);}
+    60%{background-image: url(./img/Bg_p_6.png);}
+    70%{background-image: url(./img/Bg_p_7.png);}
+    80%{background-image: url(./img/Bg_p_8.png);}
+    90%{background-image: url(./img/Bg_p_9.png);}
+} 
+#p7 .G4 #img6{
+    position: absolute;
+    width: 190px;
+    top: 220px;
+    left: 265px;
+    z-index: -1;
+}
+#p7 .G4 #img7{
+    position: absolute;
+    width: 190px;
+    top: 220px;
+    left: 850px;
+    z-index: -1;
+}
+#p7 .G4 #img8{
+    position: absolute;
+    width: 190px;
+    top: 220px;
+    left: 1415px;
+    z-index: -1;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p8{
+    /* التحكم في ارتفاع الصفحة */
+    height: 105vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(57, 72, 202, 0.404); */
+    /* z-index: 0; */
+}
+#p8 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 6824px;
+}
+#p8 .G1 #img1{
+    position: absolute;
+}
+#p8 .G1 #img2{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left: 60px;
+}
+#p8 .G1 h1{
+    font-family: "myFont5";
+    font-size: 90px;
+    position: absolute;
+    top: 60px;
+    left: 1500px;
+    /* background: #6e3939; */
+}
+#p8 .G2{
+    position: absolute;
+    width: 1900px;
+    top: 6850px;
+    left: -20px;
+}
+#p8 .G2 #img3{
+    position: absolute;
+    width: 310px;
+    top: 350px;
+    left: 150px;
+}
+#p8 .G2 #img4{
+    position: absolute;
+    width: 230px;
+    top: 350px;
+    left: 650px;
+}
+#p8 .G2 #img5{
+    position: absolute;
+    width: 230px;
+    top: 350px;
+    left: 1100px;
+}
+#p8 .G2 #img6{
+    position: absolute;
+    width: 310px;
+    top: 350px;
+    left: 1490px;
+}
+#p8 .G3{
+    position: absolute; width: 1900px; top: 6850px;}
+#p8 .G3 #hr8_1{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    top: 200px;
+    left: 840px;
+    border: 2px solid #b8995d;
+    border-radius: 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p8 .G3 #txt8_1{
+    font-family: "myFont7";
+    font-size: 30px;
+    position: absolute;
+    top: 215px;
+    left: 885px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p9{
+    /* التحكم في ارتفاع الصفحة */
+    height: 110vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(67, 146, 199, 0.404); */
+    /* z-index: 0; */
+}
+#p9 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 7781px;
+    /* background: rgba(218, 218, 71, 0.733); */
+}
+#p9 .G1 #hr9_1{
+    position:absolute;
+    width: 1900px;
+    height: 160px;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 0px 0px 0px 80px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+    z-index: -1;
+}
+#p9 .G1 #hr9_2{
+    position: absolute;
+    width: 1000px;
+    height: 10px;
+    top: 300px;
+    left: 420px;
+    border:none;
+    border-radius: none;
+    background-color: #b8995d;
+    text-align:left; 
+    margin-left: 0;
+}
+#p9 .G1 #hr9_3{
+    position: absolute;
+    width: 1600px;
+    height: 160px;
+    top: 350px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p9 .G1 #hr9_4{
+    position: absolute;
+    width: 1600px;
+    height: 160px;
+    top: 530px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p9 .G1 #hr9_5{
+    position: absolute;
+    width: 1600px;
+    height: 160px;
+    top: 710px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p9 .G1 #hr9_s1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 780px;
+    left: 1690px;
+    background: #1a1a1a;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p9 .G1 #hr9_s2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 570px;
+    left: 1690px;
+    background: #1a1a1a;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p9 .G1 #hr9_s3{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 390px;
+    left: 1690px;
+    background: #1a1a1a;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+
+#p9 .G2{
+    position: absolute;
+    width: 1902px;
+    top: 7781px;
+    /* background: rgba(218, 218, 71, 0.733); */
+    z-index: 1;
+}
+
+#p9 .G2 #img9_1{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 400px;
+}
+#p9 .G2 #img9_2{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 1370px;
+}
+#p9 .G3{
+    position: absolute;
+    width: 1550px;
+    top: 7840px;
+    left: 175px;
+    /* background: rgba(218, 218, 71, 0.733); */
+    z-index: 10;
+}
+#p9 .G3 #txt0{
+    font-family: "myFont6";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 500px;
+    top: 0px;
+    color: rgb(255, 255, 255);
+}
+#p9 .G3 #txt1{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 430px;
+    top: 180px;
+    /* background-color: violet; */
+}
+
+#p9 .G3 #txt2{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 310px;
+    /* background-color: violet; */
+}
+#p9 .G3 #txt3{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 490px;
+    /* background-color: violet; */
+}
+#p9 .G3 #txt4{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 700px;
+    /* background-color: violet; */
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p10{
+    /* التحكم في ارتفاع الصفحة */
+    height: 120vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(67, 146, 199, 0.404); */
+}
+#p10 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 8781px;
+    /* background: rgba(218, 218, 71, 0.733); */
+}
+#p10 .G1 #hr10_1{
+    position:absolute;
+    width: 1900px;
+    height: 160px;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 0px 0px 0px 80px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+    z-index: -1;
+    
+}
+#p10 .G1 #hr10_2{
+    position: absolute;
+    width: 1000px;
+    height: 10px;
+    top: 300px;
+    left: 420px;
+    border:none;
+    border-radius: none;
+    background-color: #b8995d;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_3{
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 350px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 25px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_4{
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 480px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 25px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_5{
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 610px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 25px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_6{
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 740px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 25px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_7{
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 870px;
+    left: 150px;
+    background: #d8c6a4;
+    border: none;
+    border-radius: 25px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p10 .G1 #hr10_s1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 650px;
+    left: 1690px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p10 .G1 #hr10_s2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 520px;
+    left: 1690px;
+    background: #1a1a1a;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p10 .G1 #hr10_s3{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 390px;
+    left: 1690px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p10 .G1 #hr10_s4{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 780px;
+    left: 1690px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p10 .G1 #hr10_s5{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 910px;
+    left: 1690px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+}
+#p10 .G2{
+    position: absolute;
+    width: 1902px;
+    top: 8791px;
+    /* background: rgba(218, 218, 71, 0.733); */
+    z-index: 1;
+}
+
+#p10 .G2 #img10_1{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 400px;
+}
+#p10 .G2 #img10_2{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 1370px;
+}
+
+#p10 .G3{
+    position: absolute;
+    width: 1550px;
+    top: 8840px;
+    left: 175px;
+    /* background: rgba(218, 218, 71, 0.733); */
+    z-index: 10;
+}
+#p10 .G3 #txt0{
+    font-family: "myFont6";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 500px;
+    top: 0px;
+    color: rgb(255, 255, 255);
+}
+#p10 .G3 #txt1{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 430px;
+    top: 180px;
+}
+#p10 .G3 #txt2{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 310px;
+}
+
+#p10 .G3 #txt3{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 435px;
+}
+
+#p10 .G3 #txt4{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 565px;
+}
+
+#p10 .G3 #txt5{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 695px;
+}
+
+#p10 .G3 #txt6{
+    font-family: "myFont7";
+    text-align: right;
+    font-size: 35px;
+    position: absolute;
+    width: 170vh;
+    right: 50px;
+    top: 820px;
+}
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p11{
+    /* التحكم في ارتفاع الصفحة */
+    height: 123vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(67, 146, 199, 0.404); */
+}
+#p11 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 9881px;
+    /* background: rgba(218, 218, 71, 0.733); */
+}
+#p11 .G1 #img11_1{
+    position: absolute;
+    width: 1500px;
+    top: none;
+    left: 400px;
+}
+#p11 .G1 #hr11_1{
+    position: absolute;
+    width: 1900px;
+    height: 50px;
+    top: 905px;
+    left: 0px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+#p11 .G1 #hr11_2{
+    position: absolute;
+    width: 1900px;
+    height: 350px;
+    top: 555px;
+    left: 0px;
+    background: #b8995d;
+    border: none;
+    border-radius:150px 0px 0px 0px;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+
+#p11 .G1 #hr11_3{
+    position: absolute;
+    width: 300px;
+    height: 7px;
+    top: 230px;
+    left: 812px;
+    border:none;
+    border-radius: none;
+    background-color: #b8995d;
+    text-align:left; 
+    margin-left: 0;
+}
+
+#p11 .G2{
+    position: absolute;
+    width: 300px;
+    top: 10000px;
+    left: 800px;
+    ;
+}
+
+#p11 .G2 #txt0{
+    font-family: "myFont6";
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    width: 35vh;
+    left: 0px;
+    top: 0px;
+    /* background: rgba(218, 218, 71, 0.733) */
+}
+
+#p11 .G3{
+    position: absolute;
+    width: 1900px;
+    top: 10350px;
+    left: 0px;
+}
+
+#p11 .G3 #img11_2{
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_3{
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_4{
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_5{
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: 1250px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_6{
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    left: 370px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_7{
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    left: 730px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+#p11 .G3 #img11_8{
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    left: 1080px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0.1px #0000008e;
+}
+
+/*  *//*------------------------------------------------*/
+
+/*  *//*------------------------------------------------*/
+#p12{
+    /* التحكم في ارتفاع الصفحة */
+    height: 100vh;
+    /* لون تمييز فقط */
+    /* background-color: rgba(199, 67, 142, 0.404); */
+}
+#p12 .G1{
+    position: absolute;
+    width: 1902px;
+    top: 10840px;
+    /* background: rgba(218, 218, 71, 0.733); */
+}
+#p12 .G1 #img12_1{
+    position: absolute;
+    width: 1500px;
+    top: none;
+    left: 400px;
+}
+#p12 .G1 #hr12_1{
+    position: absolute;
+    width: 1050px;
+    height: 2px;
+    top: 560px;
+    left: 0px;
+    background: #000000;
+    border: none;
+    border-radius:none;
+    background-color: none;
+    text-align:left; 
+    margin-left: 0;
+}
+
+#p12 .G1 #img12_2{
+    position: absolute;
+    width:300px;
+    top: 130px;
+    left: 100px;
+}
+
+#p12 .G2{
+    position: absolute;
+    width: 1902px;
+    top: 11150px;
+    /* background: rgba(218, 218, 71, 0.733); */
+}
+
+#p12 .G2 #img12_3{
+    position: absolute;
+    width: 150px;
+    top: 80px;
+    left: 630px;
+
+}
+#p12 .G2 #img12_4{
+    position: absolute;
+    width: 20px;
+    top: 90px;
+    left: 800px;
+
+}
+#p12 .G2 #img12_5{
+    position: absolute;
+    width: 20px;
+    top: 145px;
+    left: 800px;
+
+}
+#p12 .G2 #img12_6{
+    position: absolute;
+    width: 20px;
+    top: 200px;
+    left: 800px;
+
+}
+#p12 .G2 #img12_7{
+    position: absolute;
+    width: 30px;
+    top: 270px;
+    left: 1020px;
+
+}
+
+#p12 .G3{
+    position: absolute;
+    width: 1902px;
+    top: 11230px;
+    background: rgba(218, 218, 71, 0.733);
+}
+
+#p12 .G3 #txt0{
+    text-decoration: none;
+    font-family: "myFont3";
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    top: 0px;
+    left: 830px;
+}
+#p12 .G3 #txt1{
+    text-decoration: none;
+    font-family: "myFont3";
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    top: 58px;
+    left: 830px;
+}
+#p12 .G3 #txt2{
+    text-decoration: none;
+    font-family: "myFont3";
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 830px;
+}
+#p12 .G3 #txt3{
+    font-family: "myFont6";
+    font-size: 25px;
+    color: #b8995d;
+    position: absolute;
+    top: 195px;
+    left: 380px;
+}
